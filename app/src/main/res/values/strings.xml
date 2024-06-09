@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">Android App</string>
+    <string name="app_name">Andriod APP</string>
+    <string name="activity_main">Android_App.app.main</string>
+
+    <string-array name="employee_type_array">
+        <item>Permanent</item>
+        <item>Temporary</item>
+        <item>Contract</item>
+        <item>Freelancer</item>
+    </string-array>
 </resources>

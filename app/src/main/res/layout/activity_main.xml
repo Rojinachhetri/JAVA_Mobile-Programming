@@ -1,49 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button" />
-
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Create a new account"
         android:textStyle="bold"
-        android:textColor="blue"
-        android:text="Hello World!"
-        android:id="@+id/tvOne"
-        />
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
 
-    <TextView
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/editTextText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:ems="10"
+        android:inputType="number|phone"
+        android:hint="Mobile Number" />
+
+    <Spinner
+        android:id="@+id/spinner_example1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginTop="20dp"
+        android:spinnerMode="dropdown"/>
+
+
+    <CheckBox
+        android:id="@+id/hourlyCheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello Rojina!"
-        android:layout_below="@id/tvOne"
+        android:text="Work Hourly" />
 
-         />
-    <TextView
+    <CheckBox
+        android:id="@+id/monthlyCheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello Rojina!"
-        android:layout_alignParentBottom="true"
-        />
+        android:text="Work as Monthly" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Available for overtime?"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="#000000" />
+
+    <RadioButton
+        android:id="@+id/radioButton_yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes" />
+
+    <RadioButton
+        android:id="@+id/radioButton_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No" />
 
     <Button
-        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:id="@+id/button"
+        android:layout_gravity="center"
+        android:text="Submit" />
 
-</RelativeLayout>
+</LinearLayout>
+
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/editTextText"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="16dp"-->
+    <!--        android:ems="10"-->
+    <!--        android:inputType="text"-->
+    <!--        android:hint="Employee Type(Spinner)" />-->
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imageView"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="100dp"-->
+    <!--        android:src="@drawable/rr"-->
+    <!--        tools:srcCompat="@tools:sample/avatars" />-->
